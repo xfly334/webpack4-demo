@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="六十二博客，开心与你共享！">
+    <meta name="description" contect="个人博客，网站，模板">
+　　<meta name="author" contect="SixtyTwo">
+　　<meta name="robots" contect= "all">
+    <!-- <link type="image/x-icon" rel="shortcut icon" href="favicon.ico"> -->
+    <title>六十二博客,开心与你共享！</title>
+    <!-- <link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" media="all"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="./bootstrap/css/font-awesome.css" media="all"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="./css/init.css" media="all"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="./css/common.css" media="all"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="./css/animate.css">animate.css -->
+    <!-- 单独样式 -->
+    <!-- <link type="text/css" rel="stylesheet" href="./css/index.css" media="all">首页样式 -->
+</head>
+<body>
+<div id="header">
+    <!-- headerTop -->
+    <div class="headertop">
+        <div class="container">
+            <div class="wear wear_title">欢迎来到六十二的网站</div>
+            <div class="wear wear_time">
+                <span>现在是北京时间:</span>
+                <time id="divT" style="color: red;" title="当前时间"></time>
+            </div>
+            <div class="wear wear_ul">
+                <div><a target="_blank" href="javascript:;" title="点击投稿">我要投稿</a></div>
+                <div><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bltXWVlWXF5aWS4fH0ANAQM" title="如果有什么需要帮助的或者给本站建议的可以及时联系我">意见反馈</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- GIFbar -->
+    <div class="header_topbar"></div>
+    <!-- nav -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">open</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand site-logo" href="index.html">
+                    <img class="logo_img" src="img/logo.png" alt="logo" width="150" height="51">
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <!-- skin_pc -->
+                <div class="skin">
+                    <span class="link_fir"><i class="fa fa-picture-o" aria-hidden="true"></i></span> &nbsp;|&nbsp;
+                    <span class="search_open"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <!-- replace background -->
+                    <div class="replback">
+                        <div class="close-search">
+                            <span class="close-top"></span>
+                            <span class="close-bottom"></span>
+                        </div>
+                        <span class="replback_span replace_bd_li replback_span_active">本地壁纸</span>
+                        <span class="replback_span replace_li">必应壁纸</span>
+                        <div class="replace_bd">
+                            <ul class="replace_ul">
+                                <li><img src="./img/bg/01.jpg" alt=""></li>
+                                <li><img src="./img/bg/02.jpg" alt=""></li>
+                                <li><img src="./img/bg/03.jpg" alt=""></li>
+                                <li><img src="./img/bg/04.jpg" alt=""></li>
+                                <li><img src="./img/bg/13.jpg" alt=""></li>
+                                <li><img src="./img/bg/14.jpg" alt=""></li>
+                                <li><img src="./img/bg/15.jpg" alt=""></li>
+                                <li><img src="./img/bg/01.jpg" alt=""></li>
+                                <li><img src="./img/bg/02.jpg" alt=""></li>
+                                <li><img src="./img/bg/03.jpg" alt=""></li>
+                                <li><img src="./img/bg/04.jpg" alt=""></li>
+                                <li><img src="./img/bg/05.jpg" alt=""></li>
+                                <li><img src="./img/bg/06.jpg" alt=""></li>
+                                <li><img src="./img/bg/07.jpg" alt=""></li>
+                                <li><img src="./img/bg/08.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="replace">
+                            <input type='hidden' class='current_page' />
+                            <input type='hidden' class='show_per_page' />
+                            <ul class="replace_ul">
+                                <li><img src="https://api.neweb.top/bing.php?date=0" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=1" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=2" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=3" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=4" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=5" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=6" alt=""></li>
+                                <li><img src="https://api.neweb.top/bing.php?date=7" alt=""></li>
+                            </ul>
+                            <div class='page_navigation'></div>
+                        </div>
+                    </div>
+                    <!-- search -->
+                    <div class="search">
+                        <h3>不搜索，无江湖</h3>
+                        <div class="search_img"><img src="./img/search_img.jpg" alt=""></div>
+                        <form onsubmit="submitFn(this,event);">
+                            <div class="search-wrapper">
+                                <div class="input-holder">
+                                    <input type="text" class="search-input" placeholder="不搜索，无江湖" />
+                                    <button class="search-icon" onclick="searchToggle(this,event);"><span></span></button>
+                                </div>
+                                <span class="close" onclick="searchToggle(this,event);"></span>
+                                <div class="result-container"></div>
+                            </div>
+                        </form>
+                        <div class="search_list">
+                            <ul class="search_li_ul" id="sj_color">
+                                <li><a href="javascript:;">测试</a></li>
+                                <li><a href="javascript:;">css</a></li>
+                                <li><a href="javascript:;">HTML</a></li>
+                                <li><a href="javascript:;">网易音乐</a></li>
+                                <li><a href="javascript:;">good stydy</a></li>
+                                <li><a href="javascript:;">测试</a></li>
+                                <li><a href="javascript:;">css</a></li>
+                                <li><a href="javascript:;">HTML</a></li>
+                                <li><a href="javascript:;">网易音乐</a></li>
+                                <li><a href="javascript:;">百度地图</a></li>
+                                <li><a href="javascript:;">prm612.top</a></li>
+                                <li><a href="javascript:;">六十二博客</a></li>
+                                <li><a href="javascript:;">必应壁纸</a></li>
+                                <li><a href="javascript:;">美图秀秀</a></li>
+                                <li><a href="javascript:;">百度地图</a></li>
+                                <li><a href="javascript:;">prm612.top</a></li>
+                                <li><a href="javascript:;">六十二博客</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- skin_m -->
+                <div class="skin_m hide">
+                    <section class="container">
+                        <form onsubmit="submitFn(this,event);">
+                            <div class="search-wrapper">
+                                <div class="input-holder">
+                                    <input type="text" class="search-input" placeholder="不搜索，无江湖" />
+                                    <button class="search-icon" onclick="searchToggle(this,event);"><span></span></button>
+                                </div>
+                                <span class="close" onclick="searchToggle(this,event);"></span>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>首页</a></li>
+                    <li><a href="content.html"><i class="fa fa-star" aria-hidden="true"></i>内容</a></li>
+                    <li><a href="link.html"><i class="fa fa-link" aria-hidden="true"></i>友情链接</a></li>
+                    <li><a href="about.html"><i class="fa fa-user-circle" aria-hidden="true"></i>关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="main">
+    <div class="container">
+        <!-- center -->
+        <div class="con_center">
+            <!-- slide -->
+            <div class="ck-slide">
+                <ul class="ck-slide-wrapper">
+                    <li>
+                        <a href="index.html">
+                            <img src="./img/slide/1.jpg" alt="" >
+                            <div class="slide_con">六十二博客，开心与你共享！1</div>
+                        </a>
+                    </li>
+                    <li style="display: none;">
+                        <a href="index.html">
+                            <img src="./img/slide/2.jpg" alt="" >
+                            <div class="slide_con">六十二博客，开心与你共享！2</div>
+                        </a>
+                    </li>
+                    <li style="display: none;">
+                        <a href="index.html">
+                            <img src="./img/slide/3.jpg" alt="" >
+                            <div class="slide_con">六十二博客，开心与你共享！3</div>
+                        </a>
+                    </li>
+                    <li style="display: none;">
+                        <a href="index.html">
+                            <img src="./img/slide/4.jpg" alt="" >
+                            <div class="slide_con">六十二博客，开心与你共享！4</div>
+                        </a>
+                    </li>
+                    <li style="display: none;">
+                        <a href="index.html">
+                            <img src="./img/slide/5.jpg" alt="" >
+                            <div class="slide_con">六十二博客，开心与你共享！5</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+                <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+                <div class="ck-slidebox">
+                    <div class="slideWrap">
+                        <ul class="dot-wrap">
+                            <li class="current"><em>1</em></li>
+                            <li><em>2</em></li>
+                            <li><em>3</em></li>
+                            <li><em>4</em></li>
+                            <li><em>5</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- introduce -->
+            <div class="introduce">
+                <div class="int_list">
+                    <ul>
+                        <li><span></span><text class="text"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;文章</text><text>612</text></li>
+                        <li><span></span><text class="text"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;评论</text><text>612</text></li>
+                        <li><span></span><text class="text"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;标签</text><text>612</text></li>
+                        <li><span></span><text class="text"><i class="fa fa-thumb-tack" aria-hidden="true"></i>&nbsp;分类</text><text>612</text></li>
+                        <li><span></span><text class="text"><i class="fa fa-user-circle-o"></i>&nbsp;作者</text><text><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=597782047&site=qq&menu=yes">☺</a></text></li>
+                    </ul>
+                </div>
+                <div class="int_bg">
+                    <div class="int_us_name">Si<span style="color: #2BBBC7;">x</span>ty<span style="color: #E1528B;">T</span>wo</div>
+                </div>
+                <div class="int_bk_name">
+                    <h3>六十二博客</h3>
+                    <span>记录学习和成长的一个自媒体博客</span>
+                    <p>热爱代码，热爱生活，热爱分享，自写一些生活记忆。本站主要作为个人博客使用，喜欢我的博客朋友们，希望大家多多提出建议，我们共同进步。</p>
+                </div>
+            </div>
+        </div>
+        <!-- left -->
+        <div class="con_left">
+            <div class="announcement">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                <div class="cement" id="cement"></div>
+            </div>
+
+        </div>
+        <!-- right -->
+        <div class="con_right">
+
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="footer navbar-relative-bottom">
+    <span>友情提示：本博客所有资源，均来自网络，如有侵权，请联系删除。</span>
+    <span>
+        Copyright © 2018
+        <a href="index.html">六十二博客</a>
+        <a target="_blank" href="http://www.miibeian.gov.cn">
+            <img style="margin-top: -5px;" src="https://ww2.sinaimg.cn/large/005Kin8igy1fwgqbuez9gj300i00j3y9.jpg" alt="">
+            豫ICP备18020296号-1
+        </a>
+    </span>
+    <img src="https://ww2.sinaimg.cn/large/005Kin8igy1fx545g9zong305c00rwed.jpg" alt="六十二博客" title="六十二博客,开心与你共享！">
+    <span>
+        Powered by
+        <a href="index.html" target="_blank">
+            SixtyTwo
+        </a>
+        · Theme by
+        <a href="index.html" target="_blank">六十二博客</a>
+    </span>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</body>
+</html>
+
+<!-- <script>window.jQuery || document.write('<script src="./js/jquery-1.11.1.min.js"><\/script>')</script> -->
+<!-- <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script> -->
+
+<!-- 输入框烟花效果 -->
+<!-- <script type="text/javascript" src="./js/inptype.js"></script> -->
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+    POWERMODE.colorful = true;  // 冒光特效
+    POWERMODE.shake = false;    // 抖动特效
+    document.body.addEventListener('input', POWERMODE); // 为所有 input 标签都加上特效
+</script>
+
+<!-- <script type="text/javascript" src="./js/slide.js"></script>轮播js -->
+<!-- <script type="text/javascript" src="./js/index.js"></script> -->
+<script type="text/javascript">
+    /* 公告 */
+    var cement = function (r) {
+        function t() {
+            return b[Math.floor(Math.random() * b.length)]
+        }
+        function e() {
+            return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+            for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                var l = document.createElement("span");
+                l.textContent = e(), l.style.color = t(), n.appendChild(l)
+            }
+            return n
+        }
+        function i() {
+            var t = o[c.skillI];
+            c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+            o = ["大家好，欢迎来到六十二博客。","六十二博客，开心与你共享！","请您花费几分钟的时间来浏览本站，这里一定有您想要的！","工作之余，腾出空，去生活！"].map(function (r) {
+                return r + "."
+            }),
+            a = 2,
+            g = 1,
+            s = 5,
+            d = 75,
+            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+            c = {
+                text: "",
+                prefixP: -s,
+                skillI: 0,
+                skillP: 0,
+                direction: "forward",
+                delay: a,
+                step: g
+            };
+        i()
+    };
+    cement(document.getElementById('cement'));
+    /* 公告END */
+</script>
